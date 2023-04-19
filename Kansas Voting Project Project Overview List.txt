@@ -1,0 +1,64 @@
+Kansas Voting Project Project Overview List
+
+
+To create a secure web app using Bootstrap and Express.js, follow this project overview list. Remember that since your budget is $0, we'll focus on using free tools and resources:
+
+Project setup and environment:
+
+Install Node.js and npm (Node Package Manager)
+Create a new project directory
+Initialize the project using npm init
+Install required dependencies: Express.js, Bootstrap, EJS (Embedded JavaScript templating), and other necessary packages
+Set up your Express.js application
+Configure your EJS views and static files directories
+Create a .gitignore file to exclude unnecessary files from version control
+API keys and authentication:
+
+Register for API keys for Google Civic Information API, Open States API, and ProPublica Congress API
+Store the API keys securely using environment variables or a secure configuration file
+Design the application's architecture:
+
+Break down the application into modular components (models, views, controllers)
+Define the data models for elected officials, voting information, and other relevant data
+Determine the routes and controllers for each web page
+Implement the frontend with Bootstrap:
+
+Design responsive and accessible layouts using Bootstrap's components and grid system
+Integrate EJS templates for dynamic content rendering
+Use client-side JavaScript to handle user interactions and make API calls
+Implement the backend with Express.js:
+
+Set up route handlers and controllers for each endpoint
+Fetch data from the Google Civic Information API, Open States API, and ProPublica Congress API as needed
+Filter, process, and store the fetched data in appropriate data models
+Secure your web app:
+
+Implement proper input validation and sanitization to prevent security vulnerabilities (e.g., XSS and SQL injection)
+Use HTTPS (Let's Encrypt provides free SSL certificates)
+Add security headers using the 'helmet' package
+Testing:
+
+Write unit and integration tests for your application's components
+Use tools like Jest, Mocha, or Jasmine for testing
+Deployment:
+
+Deploy your application on a free hosting platform (e.g., Heroku, Netlify, or Vercel)
+Documentation and maintenance:
+
+Write clear and concise documentation for your web app
+Keep your dependencies up to date and monitor for security vulnerabilities
+Helpful tips:
+
+Plan your application's features and user flow before diving into coding
+Use version control (e.g., Git) to track changes and collaborate with others
+Keep your code modular and well-organized to improve maintainability
+Common pitfalls to avoid:
+
+Exposing API keys or sensitive information in your code
+Neglecting accessibility and responsive design
+Inadequate testing and error handling
+Best practices:
+
+Follow the principles of secure coding and apply security best practices throughout the development process
+Adhere to web accessibility guidelines (WCAG 2.0) to make your app usable by a wider audience
+Continuously refactor and optimize your code as the project evolves
