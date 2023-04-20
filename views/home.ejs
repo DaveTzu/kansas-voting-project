@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Kansas Voting Information</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="container-fluid">
+    <div class="row align-items-center justify-content-between">
+      <div class="col-md-4 header-left">
+        <img src="/images/logo-placeholder.png" alt="Logo" class="logo">
+        <span class="website-name">Kansas Voting Info</span>
+      </div>
+      <div class="col-md-4 header-right">
+        <input type="text" class="search-bar" placeholder="Search...">
+        <a href="/contact" class="contact-link">CONTACT</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero section -->
+  <section class="hero container-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1>I want to vote in Kansas...</h1>
+          <div class="buttons">
+            <button class="btn btn-primary">Learn more about voting in Kansas</button>
+            <button class="btn btn-primary">Voting Locations</button>
+            <button class="btn btn-primary">Election Calendar and deadlines</button>
+            <button class="btn btn-primary">Voting FAQs</button>
+            <button class="btn btn-primary">Build me a voting guide based on my address</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1>I want to learn more about government in Kansas</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col text-center">
+          <button class="btn btn-primary">My Elected Officials</button>
+          <button class="btn btn-primary">Learn about Kansas Government</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <%- include('partials/footer') %>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
