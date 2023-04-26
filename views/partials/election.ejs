@@ -1,0 +1,36 @@
+<% if (election && contests) { %>
+    <div class="container">
+      <h2><%= election.name %></h2>
+      <h4>Election Day: <%= election.electionDay %></h4>
+      <hr>
+      
+      <% contests.forEach((contest) => { %>
+        <% if (contest.type === "General" || contest.type === "Referendum") { %>
+          <div class="card mb-3">
+            <div class="card-body">
+              <h5 class="card-title"><%= contest.type === "General" ? contest.office : contest.referendumTitle %></h5>
+              <% if (contest.type === "General" && contest.candidates) { %>
+                <h6 class="card-subtitle mb-2">Candidates:</h6>
+                <ul>
+                  <% contest.candidates.forEach((candidate) => { %>
+                    <li>
+                      <strong><%= candidate.name %></strong> (<%= candidate.party %>)
+                      <%= candidate.candidateUrl ? `<a href="${candidate.candidateUrl}" target="_blank">Website</a>` : '' %>
+                      <%= candidate.phone ? ` | Phone: ${candidate.phone}` : '' %>
+                    </li>
+                  <% }) %>
+                </ul>
+              <% } else if (contest.type === "Referendum") { %>
+                <a href="<%= contest.referendumUrl %>" target="_blank">More Information</a>
+              <% } %>
+            </div>
+          </div>
+        <% } %>
+      <% }) %>
+    </div>
+  <% } else { %>
+    <div class="container">
+      <p>No election data found.</p>
+    </div>
+  <% } %>
+  
